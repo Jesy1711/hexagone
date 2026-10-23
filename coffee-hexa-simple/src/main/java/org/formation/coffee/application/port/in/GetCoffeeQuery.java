@@ -1,4 +1,10 @@
 package org.formation.coffee.application.port.in;
 
-public class GetCoffeeQuery {
+import org.formation.coffee.domain.exception.CoffeeNotFoundException;
+import org.formation.coffee.domain.model.Coffee;
+import org.formation.coffee.domain.model.CoffeeId;
+
+public interface GetCoffeeQuery {
+
+    Coffee getCoffee(CoffeeId id);
 }

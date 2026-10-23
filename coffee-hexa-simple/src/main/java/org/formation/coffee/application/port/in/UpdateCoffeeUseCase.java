@@ -1,4 +1,9 @@
 package org.formation.coffee.application.port.in;
 
-public class UpdateCoffeeUseCase {
+import org.formation.coffee.domain.exception.CoffeeNotFoundException;
+import org.formation.coffee.domain.model.Coffee;
+
+public interface UpdateCoffeeUseCase {
+
+    Coffee updateCoffee(UpdateCoffeeCommand command);
 }

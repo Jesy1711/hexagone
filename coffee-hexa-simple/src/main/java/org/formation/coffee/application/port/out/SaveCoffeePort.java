@@ -1,4 +1,8 @@
 package org.formation.coffee.application.port.out;
 
-public class SaveCoffeePort {
+import org.formation.coffee.domain.model.Coffee;
+
+public interface SaveCoffeePort {
+
+    Coffee save(Coffee coffee);
 }
